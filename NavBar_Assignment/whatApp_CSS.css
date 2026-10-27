@@ -1,0 +1,50 @@
+*{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainNav{
+    background-color: black;
+    color: white;
+    height: 100px;
+    
+}
+
+.leftNav{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 3px;
+}
+
+.name111{
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    
+}
+
+.rightNav {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 30%;
+    gap: 170px;
+}
+
+.addList{
+    box-sizing: border-box; 
+    border: 2px solid rgb(51, 47, 47);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+}

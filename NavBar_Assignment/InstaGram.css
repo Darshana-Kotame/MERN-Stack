@@ -1,0 +1,52 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainNav{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: rgb(215, 205, 187);
+    display: inline-block;
+    
+}
+
+.topNav{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    text-align: right;
+
+}
+
+.topNav span{
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.bottomNav{
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+
+}
+
+.bottomNav span{
+    margin-right:20px;
+    font-size: 13px;
+}
+
+.topNav,.bottomNav{
+    line-height: 30px;
+}
+
+.topNav span:hover{
+    color: rgb(231, 161, 134);
+}
+
+.English:hover{
+    color: rgb(231, 161, 134);
+}
