@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.mainContainer {
+    width: 600px;
+    min-height: 730px;
+    margin: 50px auto;
+    padding: 30px 25px;
+
+    background: linear-gradient(
+        to bottom right,
+        #d99af5,
+        #c7c5f8,
+        #a6eaff,
+        #a1fff5
+    );
+
+    border-top: 2px solid #555;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.inputGroup label {
+    font-size: 14px;
+    color: #666;
+}
+
+.inputGroup label span,
+.verificationDiv span {
+    color: #ff4d4d;
+}
+
+.inputGroup input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    outline: none;
+    font-size: 13px;
+}
+
+.inputGroup input:focus {
+    border-color: #4169e1;
+}
+
+.inputGroup input::placeholder {
+    color: #aaa;
+}
+
+.nameGroup {
+    display: flex;
+    gap: 12px;
+}
+
+.nameGroup input {
+    width: 50%;
+}
+
+.verificationDiv {
+    width: 230px;
+    margin: 20px auto;
+}
+
+.verificationDiv > label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.captchaBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 230px;
+    height: 60px;
+
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.captchaBox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.captchaBox label {
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.captchaLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    color: #4169e1;
+}
+
+.captchaLogo i {
+    font-size: 20px;
+}
+
+.captchaLogo small {
+    font-size: 9px;
+    color: gray;
+}
+
+.submitDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submitDiv button {
+    background-color: #0056d6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.submitDiv button i {
+    margin-right: 8px;
+}
+
+.submitDiv button:hover {
+    background-color: #003fa3;
+}

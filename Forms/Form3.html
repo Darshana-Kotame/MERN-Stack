@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="Form3.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <div class="mainDiv">
+
+            
+            <h2 class="registrationHeading">
+                Registration
+            </h2>
+
+            <form>
+                <div class="personalInfo">
+
+                    <header class="headerOne">
+                        Personal Details
+                    </header>
+                    <div class="personalForm1">
+
+                        <div class="inputGroup">
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter Your Name"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="dob">
+                                Date of Birth
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dob"
+                                name="dob"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="email">
+                                E-Mail
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter Your E-Mail"
+                                required
+                            >
+                        </div>
+
+                    </div>
+                    <div class="personalForm2">
+
+                        <div class="inputGroup">
+                            <label for="mobnum">
+                                Mobile Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="mobnum"
+                                name="mobnum"
+                                placeholder="Enter Mobile Number"
+                                maxlength="10"
+                                pattern="[0-9]{10}"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <input
+                                type="text"
+                                id="gender"
+                                name="gender"
+                                placeholder="Enter Your Gender"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="occupation">
+                                Occupation
+                            </label>
+
+                            <input
+                                type="text"
+                                id="occupation"
+                                name="occupation"
+                                placeholder="Enter Your Occupation"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+               
+                <div class="identityInfo">
+
+                    <header class="headerTwo">
+                        Identity Details
+                    </header>
+
+                    
+                    <div class="identityForm1">
+
+                        <div class="inputGroup">
+                            <label for="id">
+                                ID Type
+                            </label>
+
+                            <input
+                                type="text"
+                                id="id"
+                                name="idType"
+                                placeholder="Enter ID Type"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="idNum">
+                                ID Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="idNum"
+                                name="idNum"
+                                placeholder="Enter ID Number"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="issueAut">
+                                Issue Authority
+                            </label>
+
+                            <input
+                                type="text"
+                                id="issueAut"
+                                name="issueAuthority"
+                                placeholder="Enter Issue Department"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="identityForm2">
+
+                        <div class="inputGroup">
+                            <label for="issueDate">
+                                Issue Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="issueDate"
+                                name="issueDate"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="issueState">
+                                Issue State
+                            </label>
+
+                            <input
+                                type="text"
+                                id="issueState"
+                                name="issueState"
+                                placeholder="Enter Issue State"
+                                required
+                            >
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="ExDate">
+                                Expiry Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="ExDate"
+                                name="expiryDate"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <button type="submit">
+                    Next 
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

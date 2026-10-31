@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="Form4.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <header class="heading">
+            Registration
+        </header>
+
+        <hr>
+
+        <form action="#" method="post">
+
+            <div class="statusInfo">
+
+                <label>
+                    <input type="radio" name="status" value="personal" checked>
+                    Personal
+                </label>
+
+                <label>
+                    <input type="radio" name="status" value="company">
+                    Company
+                </label>
+
+            </div>
+
+            <hr>
+
+            <div class="userInfo">
+
+                <div class="inputGroup">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        aria-label="Email"
+                        required
+                    >
+                </div>
+
+                <div class="inputGroup">
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Name"
+                        aria-label="Name"
+                        required
+                    >
+                </div>
+
+                <div class="inputGroup">
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        aria-label="Password"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="genderDiv">
+
+                <label>
+                    <input type="radio" name="gender" value="male" checked>
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+
+            </div>
+
+            <div class="registerBtn">
+
+                <div class="para">
+                    By clicking Register, you agree on our
+                    <a href="#">terms and condition.</a>
+                </div>
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
