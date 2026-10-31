@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment</title>
+
+    <style>
+        .mainContainer{
+            display: grid;
+            grid-template-areas: 'nav nav nav nav nav nav nav nav nav nav nav nav'
+                        'ls ls ls m m m m m m m m m'
+                        'ls ls ls c1 c1 c1 c2 c2 c2 c3 c3 c3'
+                        'ls ls ls f f f f f f f f f';
+            gap: 10px;
+        }
+
+        nav{
+            grid-area: nav;
+            height: 50px;
+            background-color: cadetblue;
+            text-align: center;
+        }
+
+        aside{
+            grid-area: ls;
+            height: 500px;
+            background-color: rgb(47, 169, 191);
+            text-align: center;
+        }
+
+        main{
+            grid-area: m;
+            height: 160px;
+            background-color: rgb(100, 100, 167);
+            text-align: center;
+        }
+
+        footer{
+            grid-area: f;
+            height: 100px;
+            background-color: rgb(2, 2, 49);
+            text-align: center;
+            color: white;
+        }
+
+        .con1{
+            grid-area: c1;
+            height: 200px;
+            background-color: rgb(9, 9, 156);
+            text-align: center;
+        }
+
+        .con2{
+            grid-area: c2;
+            height: 200px;
+            background-color: rgb(7, 7, 159);
+            text-align: center;
+        }
+
+        .con3{
+            grid-area: c3;
+            height: 200px;
+            background-color: rgb(10, 10, 164);
+            text-align: center;
+        }
+
+        @media screen and (max-width:399px){
+            .mainContainer{
+               grid-template-areas: 'nav nav nav nav nav nav nav nav nav nav nav nav '
+                                    'ls ls ls ls ls ls ls ls ls ls ls ls '
+                                    'm m m m m m m m m m m m'
+                                    'c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1'
+                                    'c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2'
+                                    'c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 '
+                                    'f f f f f f f f f f f f';
+            }
+
+            nav{
+                height: 30px;
+            }
+
+            aside{
+                height: 50px;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+   <div class="mainContainer">
+        <nav>
+            NAVBAR
+        </nav>
+
+        <aside>
+            ASIDE
+        </aside>
+        
+        <main>
+            MAIN
+        </main>
+
+        <section class="con1">
+            CONTENT 1
+        </section>
+        <section class="con2">
+            CONTENT 2
+        </section>
+        <section class="con3">
+            CONTENT 3
+        </section>
+
+        <footer>
+            FOOTER
+        </footer>
+   </div> 
+</body>
+</html>

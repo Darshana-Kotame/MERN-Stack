@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment</title>
+
+
+    <style>
+        body{
+            background-color: darkgoldenrod;
+        }
+        .animalContainer{
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,600px);
+            height: 400px;
+            
+        }
+
+        .animalContainer img{
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .fox img,.tiger img,.lioness img,.bear img,.wolf img{
+            border-radius: 50%;
+        }
+
+        .fox{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+
+        .lion{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .tiger{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .winter{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .lioness{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .forest{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .wolf{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .water{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .bear{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="animalContainer">
+        <div class="fox">
+            <img src="./assets/fox.jpg" alt="">
+        </div>
+
+        <div class="lion">
+            <img src="./assets/ilion.jpg" alt="">
+        </div>
+
+        <div class="tiger">
+            <img src="./assets/tiger.jpg" alt="">
+        </div>
+
+        <div class="winter">
+            <img src="./assets/winter.jpg" alt="">
+        </div>
+
+        <div class="lioness">
+            <img src="./assets/lioness.jpg" alt="">
+        </div>
+
+        <div class="forest">
+            <img src="./assets/forest.jpg" alt="">
+        </div>
+
+        <div class="wolf">
+            <img src="./assets/wolf.jpg" alt="">
+        </div>
+
+        <div class="water">
+            <img src="./assets/water.jpg" alt="">
+        </div>
+
+        <div class="bear">
+            <img src="./assets/bear.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>

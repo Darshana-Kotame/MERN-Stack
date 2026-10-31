@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Assignment</title>
+
+    <style>
+      .FruitsGallery {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: 100px 150px 125px;
+        gap: 10px;
+      }
+
+      .FruitsGallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .grapes {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .strawberry {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .watermelon {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .orange {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .papaya {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .pineapple {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="FruitsGallery">
+      <div class="grapes">
+        <img src="./assets/grapes.jpg" alt="" />
+      </div>
+      <div class="strawberry">
+        <img src="./assets/strawberry.jpg" alt="" />
+      </div>
+      <div class="watermelon">
+        <img src="./assets/watermelon.jpg" alt="" />
+      </div>
+      <div class="orange">
+        <img src="./assets/orange.jpg" alt="" />
+      </div>
+      <div class="papaya">
+        <img src="./assets/papaya.jpg" alt="" />
+      </div>
+      <div class="pineapple">
+        <img src="./assets/pineapple.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

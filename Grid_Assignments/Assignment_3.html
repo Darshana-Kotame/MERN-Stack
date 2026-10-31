@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment</title>
+
+    <style>
+        .imgGallery{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows:100px 120px 30px ;
+        }
+
+        .imgGallery img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .winter{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            position: relative;
+        }
+
+        .winter h5{
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            color: red;
+            font-size: 10px;
+        }
+
+        .redSky{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            position: relative;
+        }
+
+        .redSky h5{
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            color: white;
+            font-size: 10px;
+        }
+
+        .ocean{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            position: relative;
+        }
+
+        .ocean h5{
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            color: white;
+            font-size: 10px;
+        }
+
+        .building{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            position: relative;
+        }
+
+        .building h5{
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            color: red;
+            font-size: 10px;
+        }
+
+        .door{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            position: relative;
+        }
+
+        .door h5{
+            position: absolute;
+            top: 0;
+            left: 10px;
+            color: white;
+            font-size: 10px;
+        }
+
+        .water{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            position: relative;
+        }
+
+        .water h5{
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            color: white;
+            font-size: 10px;
+        }
+
+        .seats{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            position: relative;
+        }
+
+        .seats h5{
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            color: white;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgGallery">
+        <div class="winter">
+            <img src="./assets/winter.jpg" alt="">
+            <h5>The Winter of My Discontent</h5>
+        </div>
+
+        <div class="redSky">
+            <img src="./assets/redSky.jpg" alt="">
+            <h5>Instagram is Toxic but I kept Posting</h5>
+        </div>
+
+        <div class="ocean">
+            <img src="./assets/ocean.jpg" alt="">
+            <h5>TThrowing my Phono into the Ocean</h5>
+        </div>
+
+        <div class="building">
+            <img src="./assets/building.jpg" alt="">
+            <h5>I am Never Leaving my Room</h5>
+        </div>
+
+        <div class="door">
+            <img src="./assets/dooer.jpg" alt="">
+            <h5>Staring at Horizon Thinking</h5>
+        </div>
+
+        <div class="water">
+            <img src="./assets/water.jpg" alt="">
+            <h5>This is Water</h5>
+        </div>
+
+        <div class="seats">
+            <img src="./assets/seats.jpg" alt="">
+            <h5>Table for One Please</h5>
+        </div>
+    </div>
+</body>
+</html>
